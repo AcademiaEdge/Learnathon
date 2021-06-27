@@ -1,4 +1,34 @@
-$pink-color: #ff589f;
-h3 {
-  color: $pink-color;
-} 
+$pink: #ff589f;
+$light-blue: #15b2d3;
+$navy: #236e96;
+$yellow: #ffd700;
+$orange: #f3872f;
+$navbar-font: 'M PLUS Rounded 1c', sans-serif;
+$white: white;
+body {
+  margin:0;
+}
+#navbar {
+  width:100%;
+  background-color:$navy;
+  height:50px;
+
+}
+#hero {
+  background-color:$light-blue;
+  height:100vh;
+  top:0;
+  position:absolute;
+  h1 {
+    position:relative;
+    transform:translateY(-50%);
+    top:50%;
+    text-align:center;
+  }
+}
+#about {
+  background-color: $white;
+}
+#timeframe {
+  background-color:$orange;
+}

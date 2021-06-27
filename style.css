@@ -1,4 +1,33 @@
-h3 {
-  color: #ff589f;
+body {
+  margin: 0;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #236e96;
+  height: 50px;
+}
+
+#hero {
+  background-color: #15b2d3;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+}
+
+#hero h1 {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  text-align: center;
+}
+
+#about {
+  background-color: white;
+}
+
+#timeframe {
+  background-color: #f3872f;
 }
 /*# sourceMappingURL=style.css.map */
