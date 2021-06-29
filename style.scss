@@ -34,6 +34,13 @@ h1 {
 }
 #about {
   background-color: $white;
+  #hackathonComparison {
+    background-color:$yellow;
+    border-radius:10px;
+    h4 {
+      text-align:center;
+    }
+  }
 }
 #timeframe {
   background-color:$orange;

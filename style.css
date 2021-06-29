@@ -33,6 +33,15 @@ h1 {
   background-color: white;
 }
 
+#about #hackathonComparison {
+  background-color: #ffd700;
+  border-radius: 10px;
+}
+
+#about #hackathonComparison h4 {
+  text-align: center;
+}
+
 #timeframe {
   background-color: #f3872f;
 }
