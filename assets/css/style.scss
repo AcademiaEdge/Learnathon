@@ -23,9 +23,9 @@ h1 {
 
 }
 #hero {
-  background-image: url(heroimage.png);
-  background-size: 100% 100%;
-  background-color: orange
+  /*background-image: url(heroimage.png);
+  background-size: 100% 100%;*/
+  background-color: $light-blue;
   height:100vh;
   h1 {
     position:relative;
