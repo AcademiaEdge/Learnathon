@@ -1,18 +1,24 @@
 body {
   margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 #navbar {
   width: 100%;
   background-color: #236e96;
+  background-color: none;
   height: 50px;
+  position: fixed;
+  top: 0;
 }
 
 #hero {
   background-color: #15b2d3;
   height: 100vh;
-  top: 0;
-  position: absolute;
 }
 
 #hero h1 {
@@ -29,5 +35,18 @@ body {
 
 #timeframe {
   background-color: #f3872f;
+}
+
+#credentials {
+  background-color: white;
+}
+
+#signup {
+  background-color: #f3872f;
+}
+
+#footer {
+  background-color: #236e96;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */

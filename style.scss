@@ -3,22 +3,28 @@ $light-blue: #15b2d3;
 $navy: #236e96;
 $yellow: #ffd700;
 $orange: #f3872f;
-$navbar-font: 'M PLUS Rounded 1c', sans-serif;
+$font: 'M PLUS Rounded 1c', sans-serif;
 $white: white;
+
 body {
+  margin:0;
+  font-family:$font;
+}
+h1 {
   margin:0;
 }
 #navbar {
   width:100%;
   background-color:$navy;
+  background-color:none;
   height:50px;
+  position:fixed;
+  top:0;
 
 }
 #hero {
   background-color:$light-blue;
   height:100vh;
-  top:0;
-  position:absolute;
   h1 {
     position:relative;
     transform:translateY(-50%);
@@ -31,4 +37,14 @@ body {
 }
 #timeframe {
   background-color:$orange;
+}
+#credentials {
+  background-color:$white;
+}
+#signup {
+  background-color:$orange;
+}
+#footer {
+  background-color:$navy;
+  height:50px;
 }
