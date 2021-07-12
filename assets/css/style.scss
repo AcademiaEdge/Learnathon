@@ -16,18 +16,17 @@ h1 {
 #navbar {
   width:100%;
   background-color:$navy;
-  background-color:none;
   height:50px;
   position:fixed;
   top:0;
-
+  z-index:10;
 }
 #hero {
   /*background-image: url(heroimage.png);
   background-size: 100% 100%;*/
   background-color: $light-blue;
   height:100vh;
-  h1 {
+  .focus {
     position:relative;
     transform:translateY(-50%);
     top:50%;
@@ -36,21 +35,38 @@ h1 {
 }
 #about {
   background-color: $white;
+  h1 {
+    color:$pink;
+  }
   #hackathonComparison {
     background-color:$yellow;
     border-radius:10px;
     h4 {
       text-align:center;
     }
+    margin:0px 30px;
   }
 }
-#timeframe {
+#timeline {
   background-color:$orange;
+  h1 {
+    color:$white;
+  }
+  table {
+    background-color:$light-blue;
+    border-radius:10px;
+  }
 }
 #credentials {
+  h1 {
+    color:$pink;
+  }
   background-color:$white;
 }
 #signup {
+  h1 {
+    color:$white;
+  }
   background-color:$orange;
 }
 #footer {

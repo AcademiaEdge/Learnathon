@@ -10,10 +10,10 @@ h1 {
 #navbar {
   width: 100%;
   background-color: #236e96;
-  background-color: none;
   height: 50px;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 #hero {
@@ -23,7 +23,7 @@ h1 {
   height: 100vh;
 }
 
-#hero h1 {
+#hero .focus {
   position: relative;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -35,25 +35,47 @@ h1 {
   background-color: white;
 }
 
+#about h1 {
+  color: #ff589f;
+}
+
 #about #hackathonComparison {
   background-color: #ffd700;
   border-radius: 10px;
+  margin: 0px 30px;
 }
 
 #about #hackathonComparison h4 {
   text-align: center;
 }
 
-#timeframe {
+#timeline {
   background-color: #f3872f;
+}
+
+#timeline h1 {
+  color: white;
+}
+
+#timeline table {
+  background-color: #15b2d3;
+  border-radius: 10px;
 }
 
 #credentials {
   background-color: white;
 }
 
+#credentials h1 {
+  color: #ff589f;
+}
+
 #signup {
   background-color: #f3872f;
+}
+
+#signup h1 {
+  color: white;
 }
 
 #footer {
