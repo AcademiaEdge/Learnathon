@@ -32,6 +32,13 @@ h1 {
     top:50%;
     text-align:center;
   }
+  
+  ul {
+    position:relative;
+    transform:translateY(-50%);
+    top:70%;
+    text-align:center;
+  }
 }
 #about {
   background-color: $white;
