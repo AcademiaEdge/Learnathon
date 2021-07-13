@@ -1,7 +1,7 @@
 # Learnathon
 V1
 
-Before you start the project install the extension called "Live Sass Compiler" by Ritwick Dey, because we're using SCSS for this project
+Before you start the project in VS Code install the extension called "Live Sass Compiler" by Ritwick Dey, because we're using SCSS for this project
 
 Also using bootstrap
 
