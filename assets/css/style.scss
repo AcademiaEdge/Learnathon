@@ -22,8 +22,8 @@ h1 {
   z-index:10;
 }
 #hero {
-  /*background-image: url(heroimage.png);
-  background-size: 100% 100%;*/
+  background-image: url("assets/images/fillerimage.png");
+  background-size: 100% 100%;
   background-color: $light-blue;
   height:100vh;
   .focus {
