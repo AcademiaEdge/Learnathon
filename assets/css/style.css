@@ -17,11 +17,10 @@ h1 {
 }
 
 #hero {
-  background-image: url(images/fillerimage.png);
+  background-image: url("/images/fillerimage.png");
   background-size: 100% 100%;
   background-color: #15b2d3;
   height: 100vh;
-  color: white;
   
 }
 
