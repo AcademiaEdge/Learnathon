@@ -21,6 +21,16 @@ h1 {
   background-size: 100% 100%;
   background-color: #15b2d3;
   height: 100vh;
+  color: white;
+  
+}
+
+#hero h1{
+  font-size: 30px;
+}
+
+#hero h2{
+  font-size: 20px;
 }
 
 #hero .focus {
