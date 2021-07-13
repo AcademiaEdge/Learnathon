@@ -32,7 +32,15 @@ h1 {
     top:50%;
     text-align:center;
   }
-  
+  h1 {
+    color:$white;
+    font-size: 40px;
+  }
+  h2 {
+    color:$white;
+    font-size: 20px;
+    word-spacing: 10px;
+  }
   ul {
     position:relative;
     transform:translateY(-50%);
