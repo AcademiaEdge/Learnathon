@@ -3,10 +3,6 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-h1 {
-  margin: 0;
-}
-
 #navbar {
   width: 100%;
   background-color: #236e96;
@@ -17,19 +13,11 @@ h1 {
 }
 
 #hero {
-  background-image: url("/images/fillerimage.png");
-  background-size: 100% 100%;
-  background-color: #15b2d3;
+  background-image: url("/assets/images/fillerimage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
-  
-}
-
-#hero h1{
-  font-size: 30px;
-}
-
-#hero h2{
-  font-size: 20px;
 }
 
 #hero .focus {
@@ -37,6 +25,26 @@ h1 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
+  text-align: center;
+  background-color: black;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 40px;
+}
+
+#hero h2 {
+  color: white;
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+#hero ul {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 70%;
   text-align: center;
 }
 
@@ -50,12 +58,18 @@ h1 {
 
 #about #hackathonComparison {
   background-color: #ffd700;
-  border-radius: 10px;
-  margin: 0px 30px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+  border-radius: 15px;
+  margin: 0px 30px 15px 30px;
 }
 
 #about #hackathonComparison h4 {
   text-align: center;
+}
+
+#about #hackathonComparison ul {
+  margin: 0;
 }
 
 #timeline {
@@ -68,7 +82,26 @@ h1 {
 
 #timeline table {
   background-color: #15b2d3;
-  border-radius: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+  margin-bottom: 20px;
+}
+
+#timeline table th {
+  text-align: center;
+  font-weight: 700;
+}
+
+#timeline table th:nth-child(1), #timeline table td:nth-child(1) {
+  width: 80%;
+  padding-left: 20px;
+}
+
+#timeline table th:nth-child(2), #timeline table td:nth-child(2) {
+  width: 20%;
+  text-align: center;
+  padding-right: 20px;
 }
 
 #credentials {
@@ -85,6 +118,38 @@ h1 {
 
 #signup h1 {
   color: white;
+}
+
+#signup .col-4:nth-child(1) .glowyBox {
+  background-color: #ff589f;
+}
+
+#signup .col-4:nth-child(2) .glowyBox {
+  background-color: #ffd700;
+}
+
+#signup .col-4:nth-child(3) .glowyBox {
+  background-color: #15b2d3;
+}
+
+#signup .glowyBox {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  border-radius: 15px;
+  height: 100%;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+#signup .glowyBox p {
+  margin: 0;
+}
+
+#signup .glowyBox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #footer {

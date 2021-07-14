@@ -10,9 +10,6 @@ body {
   margin:0;
   font-family:$font;
 }
-h1 {
-  margin:0;
-}
 #navbar {
   width:100%;
   background-color:$navy;
@@ -22,15 +19,18 @@ h1 {
   z-index:10;
 }
 #hero {
-  background-image: url("assets/images/fillerimage.png");
-  background-size: 100% 100%;
-  background-color: $light-blue;
+  background-image: url("/assets/images/fillerimage.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  //background-color: $light-blue;
   height:100vh;
   .focus {
     position:relative;
     transform:translateY(-50%);
     top:50%;
     text-align:center;
+    background-color:black;
   }
   h1 {
     color:$white;
@@ -55,11 +55,15 @@ h1 {
   }
   #hackathonComparison {
     background-color:$yellow;
-    border-radius:10px;
+    box-shadow:3px 3px 3px black;
+    border-radius:15px;
     h4 {
       text-align:center;
     }
-    margin:0px 30px;
+    margin:0px 30px 15px 30px;;
+    ul {
+      margin:0;
+    }
   }
 }
 #timeline {
@@ -69,7 +73,22 @@ h1 {
   }
   table {
     background-color:$light-blue;
-    border-radius:10px;
+    border-radius:15px;
+    th {
+      text-align:center;
+      font-weight:700;
+    }
+    box-shadow:3px 3px 3px black;
+    margin-bottom:20px;
+  }
+  table th:nth-child(1), table td:nth-child(1) {
+    width:80%;
+    padding-left:20px;
+  }
+  table th:nth-child(2), table td:nth-child(2) {
+    width:20%;
+    text-align:center;
+    padding-right:20px;
   }
 }
 #credentials {
@@ -79,10 +98,31 @@ h1 {
   background-color:$white;
 }
 #signup {
+  background-color:$orange;
   h1 {
     color:$white;
   }
-  background-color:$orange;
+  .col-4:nth-child(1) .glowyBox {
+    background-color:$pink;
+  }
+  .col-4:nth-child(2) .glowyBox {
+    background-color:$yellow;
+  }
+  .col-4:nth-child(3) .glowyBox {
+    background-color:$light-blue;
+  }
+  .glowyBox {
+    transition: transform 0.2s;
+    border-radius:15px;
+    p {
+      margin:0;
+    }
+    height:100%;
+    box-shadow:3px 3px 3px black;
+  }
+  .glowyBox:hover {
+    transform: scale(1.1);
+  }
 }
 #footer {
   background-color:$navy;

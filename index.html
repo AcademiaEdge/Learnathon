@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Learnathon</title>
 </head>
@@ -33,7 +36,7 @@
       <h3>What is Learnathon?</h3>
       <p>A Learnathon is a fun event where participants learn and create a coding project all in one weekend!</p>
       <div id="hackathonComparison" class="row">
-        <div class="col-6">
+        <div class="col-6 p-3">
           <h4>Similarities to a Hackathon</h4>
           <ul>
             <li>Create a coding project</li>
@@ -41,7 +44,7 @@
             <li>Prizes</li>
           </ul>
         </div>
-        <div class="col-6">
+        <div class="col-6 p-3">
           <h4>Differences to a Hackathon</h4>
           <ul>
             <li>Less competitive</li>
@@ -60,6 +63,7 @@
   <div id="timeline" class="pb-3 pt-3">
     <div class="container">
       <h1>Our Workshops</h1>
+
       <h3>Friday</h3>
       <table id="fridayTable" class="container">
         <tr>
@@ -67,6 +71,7 @@
           <th>Time</th>
         </tr>
       </table>
+
       <h3>Saturday</h3>
       <table id="saturdayTable" class="container">
         <tr>
@@ -74,6 +79,7 @@
           <th>Time</th>
         </tr>
       </table>
+
       <h3>Sunday</h3>
       <table id="sundayTable" class="container">
         <tr>
@@ -96,9 +102,27 @@
   <div id="signup" class="pb-3 pt-3">
     <div class="container">
       <h1>Sign Up!</h1>
-      <p>Typeform link here
-      </p>
-      <p>We will use Discord for sending out zoom links, information, help, and more.</p>
+
+      <div class="row gx-5">
+        <div class="col-4">
+          <div class="p-3 glowyBox">
+            <p>Google Forms</p>
+            <p>Google Forms</p>
+            <p>Google Forms</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-3 glowyBox">
+            <p>Discord</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-3 glowyBox">
+            <p>Notion</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -106,9 +130,9 @@
   <div id="footer"></div>
 
   <!-- Scripts-->
-  <script src="assets/fridayTimeline.js"></script>
-  <script src="assets/saturdayTimeline.js"></script>
-  <script src="assets/sundayTimeline.js"></script>
+  <script src="assets/scripts/fridayTimeline.js"></script>
+  <script src="assets/scripts/saturdayTimeline.js"></script>
+  <script src="assets/scripts/sundayTimeline.js"></script>
 </body>
 
 </html>
