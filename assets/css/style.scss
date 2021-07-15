@@ -5,7 +5,9 @@ $yellow: #ffd700;
 $orange: #f3872f;
 $font: 'M PLUS Rounded 1c', sans-serif;
 $white: white;
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin:0;
   font-family:$font;
@@ -19,10 +21,10 @@ body {
   z-index:10;
 }
 #hero {
-  background-image: url("/assets/images/fillerimage.jpg");
+  /*background-image: url("/assets/images/fillerimage.jpg");
   background-position:center;
   background-size:cover;
-  background-repeat:no-repeat;
+  background-repeat:no-repeat;*/
   //background-color: $light-blue;
   height:100vh;
   .focus {
@@ -30,22 +32,46 @@ body {
     transform:translateY(-50%);
     top:50%;
     text-align:center;
-    background-color:black;
+    button {
+      background-color:$yellow;
+      border-radius:15px;
+      border-width:0;
+      box-shadow:3px 3px 3px black;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      word-spacing: 10px;
+    }
   }
-  h1 {
-    color:$white;
-    font-size: 40px;
+  .slide {
+    width:100%;
+    height:100%;
+    display:none;
   }
-  h2 {
-    color:$white;
-    font-size: 20px;
-    word-spacing: 10px;
+  #bgimg1 {
+    background-image: url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
   }
-  ul {
-    position:relative;
-    transform:translateY(-50%);
-    top:70%;
-    text-align:center;
+  #bgimg2 {
+    background-image: url("/assets/images/mads-schmidt-rasmussen-xfngap_DToE-unsplash.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  #bgimg3 {
+    background-image: url("/assets/images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
   }
 }
 #about {
@@ -96,6 +122,10 @@ body {
     color:$pink;
   }
   background-color:$white;
+  .profileBox {
+    background-color:$navy;
+    border-radius:15px;
+  }
 }
 #signup {
   background-color:$orange;
