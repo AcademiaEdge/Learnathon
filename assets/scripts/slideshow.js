@@ -1,11 +1,4 @@
 var slideIndex = 0;
-moveSlidesUp();
-function moveSlidesUp() {
-  var focusHeight = $(".focus").height();
-  $("#bgimg1").css('margin-top', -focusHeight);
-  $("#bgimg2").css('margin-top', -focusHeight);
-  $("#bgimg3").css('margin-top', -focusHeight);
-}
 
 showSlides();
 
