@@ -5,8 +5,11 @@ $yellow: #ffd700;
 $orange: #f3872f;
 $font: 'M PLUS Rounded 1c', sans-serif;
 $white: white;
+$breakpoint-tablet: 768px;
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   margin:0;
@@ -72,19 +75,71 @@ body {
   h1 {
     color:$pink;
   }
-  #hackathonComparison {
-    background-color:$yellow;
-    box-shadow:3px 3px 3px black;
-    border-radius:15px;
-    h4 {
-      text-align:center;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin:0 auto;
+
+    img {
+      width: 25vw;
+      height: 25vw;
     }
-    margin:0px 30px 15px 30px;;
-    ul {
-      margin:0;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width:100%; height: 100%;
+      }
     }
+
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+
+    .about-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      div {
+        background: $yellow;
+        width: 35vw;
+        min-height: 12vw;
+        margin: 1vw; padding: 1vw;
+        box-shadow: 5px 5px 10px 0 #666666;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      p { width: 100%; text-align: left; font-size: 1em;}
+      h2 { font-size: 1.5em; font-weight: 900; }     
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      margin: 0 auto;
+      .about-row{
+        div {
+          width: 50%;
+          justify-content: flex-start;
+        }
+        h2 { font-size: 1.5em; }
+      }
+    }
+
+    #t-l { border-radius: 10px 0 0 0; }
+    #b-l { border-radius: 0 0 0 10px; }
+    #t-r { border-radius: 0 10px 0 0; }
+    #b-r { border-radius: 0 0 10px 0; }
   }
 }
+
 #timeline {
   background-color:$orange;
   h1 {
