@@ -75,13 +75,11 @@ body {
   h1 {
     color:$pink;
   }
-  .container {
+  .gridlayout {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    margin:0 auto;
 
     img {
       width: 25vw;
