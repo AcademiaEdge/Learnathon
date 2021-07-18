@@ -3,6 +3,14 @@ html {
   overflow-x: hidden;
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 body {
   margin: 0;
   font-family: "M PLUS Rounded 1c", sans-serif;
