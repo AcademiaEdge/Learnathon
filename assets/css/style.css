@@ -71,11 +71,16 @@ body {
 
 #hero .focus h1 {
   font-size: 40px;
+  font-weight: bold;
+  word-spacing: 5px;
+  line-height: 0.7;
 }
 
 #hero .focus h2 {
   font-size: 20px;
+  font-weight: bold;
   word-spacing: 10px;
+  line-height: 0.5;
 }
 
 #hero .slide:nth-of-type(1) .focus {
