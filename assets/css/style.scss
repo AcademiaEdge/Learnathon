@@ -22,6 +22,20 @@ body {
   position:fixed;
   top:0;
   z-index:10;
+  img {
+    height:50px;
+  }
+  button {
+    width:15%;
+    height:50px;
+    background-color:$navy;
+    color:white;
+    border-style:none;
+  }
+  #links {
+    padding:0;
+    display:inline;
+  }
 }
 #hero {
   /*background-image: url("/assets/images/fillerimage.jpg");

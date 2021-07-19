@@ -17,6 +17,23 @@ body {
   z-index: 10;
 }
 
+#navbar img {
+  height: 50px;
+}
+
+#navbar button {
+  width: 15%;
+  height: 50px;
+  background-color: #236e96;
+  color: white;
+  border-style: none;
+}
+
+#navbar #links {
+  padding: 0;
+  display: inline;
+}
+
 #hero {
   /*background-image: url("/assets/images/fillerimage.jpg");
   background-position:center;
