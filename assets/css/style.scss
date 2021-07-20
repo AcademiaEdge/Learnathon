@@ -5,6 +5,7 @@ $yellow: #ffd700;
 $orange: #f3872f;
 $font: 'M PLUS Rounded 1c', sans-serif;
 $white: white;
+$breakpoint-phone: 576px;
 $breakpoint-tablet: 768px;
 
 html {
@@ -12,30 +13,71 @@ html {
   overflow-x: hidden;
 }
 body {
-  margin:0;
+  margin:0!important;
   font-family:$font;
 }
 #navbar {
   width:100%;
   background-color:$navy;
   height:50px;
-  position:fixed;
+  /*position:fixed;
   top:0;
   z-index:10;
-  img {
+  padding:0;
+  display:flex;
+  align-items: center;*/
+  /*img {
     height:50px;
   }
-  button {
-    width:15%;
-    height:50px;
-    background-color:$navy;
-    color:white;
-    border-style:none;
-  }
-  #links {
+  
+  ul {
     padding:0;
-    display:inline;
-  }
+    margin:0 0 0 auto;
+    width:100%;
+    height:100%;
+    li {
+      float:left;
+      width:calc(100% / 4);
+      list-style: none;
+      height:inherit;
+      button {
+        width:100%;
+        height:100%;
+        background-color:inherit;
+        color:white;
+        border-style:none;
+        border-width:0;
+        transition:background-color 0.2s;
+        text-align:center;
+      }
+      button:hover {
+        background-color:$light-blue;
+      }
+    }
+
+  }*/
+  /*@media (max-width: $breakpoint-phone) {
+    img {
+      display:none;
+    }
+    ul {
+      width:80%;
+      background-color:green;
+      li {
+        float:none;
+        width:100%;
+      }
+    }
+  }*/
+}
+#milano {
+  margin-top:200px;
+  width:100%;
+  background-color:$navy;
+  height:50px;
+  padding:0;
+  display:flex;
+  align-items: center;
 }
 #hero {
   /*background-image: url("/assets/images/fillerimage.jpg");
@@ -102,8 +144,8 @@ body {
     align-items: center;
 
     img {
-      width: 25vw;
-      height: 25vw;
+      width: 30%;
+      height: 30%;
     }
 
     @media (max-width: $breakpoint-tablet) {
@@ -126,9 +168,9 @@ body {
       justify-content: center;
       div {
         background: $yellow;
-        width: 35vw;
-        min-height: 12vw;
-        margin: 1vw; padding: 1vw;
+        width: 45%;
+        min-height: 12%;
+        margin: 1%; padding: 1%;
         box-shadow: 5px 5px 10px 0 #666666;
 
         display: flex;
@@ -137,7 +179,11 @@ body {
       }
 
       p { width: 100%; text-align: left; font-size: 1em;}
-      h2 { font-size: 1.5em; font-weight: 900; }     
+      h2 { 
+        font-size: 1.5em;
+        font-weight: 900;
+        text-align:center; 
+      }     
     }
 
     @media (max-width: $breakpoint-tablet) {
