@@ -12,42 +12,16 @@ body {
   width: 100%;
   background-color: #236e96;
   height: 50px;
-  /*position:fixed;
-  top:0;
-  z-index:10;
-  padding:0;
-  display:flex;
-  align-items: center;*/
-  /*img {
-    height:50px;
-  }
-  
-  ul {
-    padding:0;
-    margin:0 0 0 auto;
-    width:100%;
-    height:100%;
-    li {
-      float:left;
-      width:calc(100% / 4);
-      list-style: none;
-      height:inherit;
-      button {
-        width:100%;
-        height:100%;
-        background-color:inherit;
-        color:white;
-        border-style:none;
-        border-width:0;
-        transition:background-color 0.2s;
-        text-align:center;
-      }
-      button:hover {
-        background-color:$light-blue;
-      }
-    }
-
-  }*/
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*@media (max-width: $breakpoint-phone) {
     img {
       display:none;
@@ -61,6 +35,41 @@ body {
       }
     }
   }*/
+}
+
+#navbar img {
+  height: 50px;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0 0 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar ul li {
+  float: left;
+  width: calc(100% / 4);
+  list-style: none;
+  height: inherit;
+}
+
+#navbar ul li button {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: white;
+  border-style: none;
+  border-width: 0;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  text-align: center;
+  overflow: hidden;
+}
+
+#navbar ul li button:hover {
+  background-color: #15b2d3;
 }
 
 #milano {
