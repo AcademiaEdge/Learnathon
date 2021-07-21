@@ -22,19 +22,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*@media (max-width: $breakpoint-phone) {
-    img {
-      display:none;
-    }
-    ul {
-      width:80%;
-      background-color:green;
-      li {
-        float:none;
-        width:100%;
-      }
-    }
-  }*/
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 #navbar img {
@@ -72,18 +61,12 @@ body {
   background-color: #15b2d3;
 }
 
-#milano {
-  margin-top: 200px;
-  width: 100%;
-  background-color: #236e96;
-  height: 50px;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.frosted {
+  opacity: 0.8 !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 #hero {
@@ -131,7 +114,6 @@ body {
 #hero .focus h2 {
   font-size: 20px;
   font-weight: bold;
-  word-spacing: 10px;
   line-height: 1.4;
 }
 
@@ -332,6 +314,7 @@ body {
 #credentials .profileBox img {
   width: 80%;
   margin-left: 10%;
+  max-width: 200px;
 }
 
 #signup {
@@ -342,15 +325,15 @@ body {
   color: white;
 }
 
-#signup .col-4:nth-child(1) .glowyBox {
+#signup .row div:nth-child(1) .glowyBox {
   background-color: #ff589f;
 }
 
-#signup .col-4:nth-child(2) .glowyBox {
+#signup .row div:nth-child(2) .glowyBox {
   background-color: #ffd700;
 }
 
-#signup .col-4:nth-child(3) .glowyBox {
+#signup .row div:nth-child(3) .glowyBox {
   background-color: #15b2d3;
 }
 
@@ -363,6 +346,8 @@ body {
   height: 100%;
   -webkit-box-shadow: 3px 3px 3px black;
           box-shadow: 3px 3px 3px black;
+  max-width: 300px;
+  margin: auto;
 }
 
 #signup .glowyBox p {
