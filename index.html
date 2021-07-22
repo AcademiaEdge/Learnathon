@@ -20,7 +20,7 @@
 <body>
   <!--navbar-->
   <div id="navbar">
-    <img src="/assets/images/fillerimage.jpg" alt="Logo">
+    <img src="assets/images/fillerimage.jpg" alt="Logo">
     
     <ul>
       
@@ -113,30 +113,33 @@
   <div id="timeline" class="pb-3 pt-3">
     <div class="container">
       <h1>Our Workshops</h1>
+      
+      <div id="tableContainer">
+        <div id="tabs">
+          <div class="tab activeTab">Friday</div>
+          <div class="tab">Saturday</div>
+          <div class="tab">Sunday</div>
+        </div>
 
-      <h3>Friday</h3>
-      <table id="fridayTable" class="container">
-        <tr>
-          <th>Event</th>
-          <th>Time</th>
-        </tr>
-      </table>
-
-      <h3>Saturday</h3>
-      <table id="saturdayTable" class="container">
-        <tr>
-          <th>Event</th>
-          <th>Time</th>
-        </tr>
-      </table>
-
-      <h3>Sunday</h3>
-      <table id="sundayTable" class="container">
-        <tr>
-          <th>Event</th>
-          <th>Time</th>
-        </tr>
-      </table>
+        <table id="fridayTable" class="schedule shownTable">
+          <tr>
+            <th>Event</th>
+            <th>Time</th>
+          </tr>
+        </table>
+        <table id="saturdayTable" class="schedule hiddenTable">
+          <tr>
+            <th>Event</th>
+            <th>Time</th>
+          </tr>
+        </table>
+        <table id="sundayTable" class="schedule hiddenTable">
+          <tr>
+            <th>Event</th>
+            <th>Time</th>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -217,6 +220,7 @@
   <div id="footer"></div>
 
   <!-- Scripts-->
+  <script src="assets/scripts/timelineTabs.js"></script>
   <script src="assets/scripts/fridayTimeline.js"></script>
   <script src="assets/scripts/saturdayTimeline.js"></script>
   <script src="assets/scripts/sundayTimeline.js"></script>

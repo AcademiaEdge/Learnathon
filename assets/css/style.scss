@@ -191,28 +191,80 @@ body {
 
 #timeline {
   background-color:$orange;
-  h1 {
-    color:$white;
-  }
-  table {
-    background-color:$light-blue;
-    border-radius:15px;
-    th {
-      text-align:center;
-      font-weight:700;
+  h1 { color:$white; }
+  
+  #tableContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-size: 1.5em;
+
+    #tabs {
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-end;
     }
-    box-shadow:3px 3px 3px black;
-    margin-bottom:20px;
+
+    .tab {
+      border-radius: 25px 25px 0px 0px;
+      box-shadow: 8px 8px 4px 0px rgba(0,0,0,0.5);
+      background-color: $pink;
+      min-width: 10vw;
+      margin-left: 3vw;
+      text-align: center;
+
+      transition: 0.5s;
+    }
+
+    .tab:hover{
+      background-color: $light-blue;
+      cursor: pointer;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      #tabs{ justify-content: space-between; }
+      .tab{ width:30vw; margin:0; }
+    }
+
+    .activeTab{ background-color: $yellow;}
+
+    table {
+      background-color:$light-blue;
+      border-radius:15px 0px 15px 15px;
+
+      @media (max-width: $breakpoint-tablet) {
+        border-radius: 0px 0px 15px 15px;
+      }
+
+      box-shadow: 8px 8px 4px 0px rgba(0,0,0,0.5);
+      th {
+        text-align:center;
+        font-weight:700;
+        border-bottom: 2px black solid;
+      }
+      th:nth-of-type(1){
+        width:66.6vw;
+      }
+      th:nth-of-type(2){
+        width:33.3vw;
+      }
+      td {
+        text-align: center;
+      }
+      // box-shadow:3px 3px 3px black;
+      margin-bottom:20px;
+    }
   }
-  table th:nth-child(1), table td:nth-child(1) {
-    width:80%;
-    padding-left:20px;
+
+  .hiddenTable {
+    display:none;
   }
-  table th:nth-child(2), table td:nth-child(2) {
-    width:20%;
-    text-align:center;
-    padding-right:20px;
+  .shownTable {
+    display:block;
   }
+
+  
 }
 #credentials {
   h1 {
