@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
@@ -15,6 +15,58 @@ body {
   position: fixed;
   top: 0;
   z-index: 10;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+#navbar img {
+  height: 50px;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0 0 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar ul li {
+  float: left;
+  width: calc(100% / 4);
+  list-style: none;
+  height: inherit;
+}
+
+#navbar ul li button {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: white;
+  border-style: none;
+  border-width: 0;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  text-align: center;
+  overflow: hidden;
+}
+
+#navbar ul li button:hover {
+  background-color: #15b2d3;
+}
+
+.frosted {
+  opacity: 0.8 !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 #hero {
@@ -54,11 +106,15 @@ body {
 
 #hero .focus h1 {
   font-size: 40px;
+  font-weight: bold;
+  word-spacing: 5px;
+  line-height: 1;
 }
 
 #hero .focus h2 {
   font-size: 20px;
-  word-spacing: 10px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 #hero .slide:nth-of-type(1) .focus {
@@ -87,7 +143,7 @@ body {
   color: #ff589f;
 }
 
-#about .container {
+#about .gridlayout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,16 +157,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
-#about .container img {
-  width: 25vw;
-  height: 25vw;
+#about .gridlayout img {
+  width: 30%;
+  height: 30%;
 }
 
 @media (max-width: 768px) {
-  #about .container {
+  #about .gridlayout {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -119,7 +174,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #about .container img {
+  #about .gridlayout img {
     width: 100%;
     height: 100%;
   }
@@ -150,10 +205,10 @@ body {
 
 #about .grid .about-row div {
   background: #ffd700;
-  width: 35vw;
-  min-height: 12vw;
-  margin: 1vw;
-  padding: 1vw;
+  width: 45%;
+  min-height: 12%;
+  margin: 1%;
+  padding: 1%;
   -webkit-box-shadow: 5px 5px 10px 0 #666666;
           box-shadow: 5px 5px 10px 0 #666666;
   display: -webkit-box;
@@ -177,6 +232,7 @@ body {
 #about .grid .about-row h2 {
   font-size: 1.5em;
   font-weight: 900;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -334,6 +390,7 @@ body {
 #credentials .profileBox img {
   width: 80%;
   margin-left: 10%;
+  max-width: 200px;
 }
 
 #signup {
@@ -344,15 +401,15 @@ body {
   color: white;
 }
 
-#signup .col-4:nth-child(1) .glowyBox {
+#signup .row div:nth-child(1) .glowyBox {
   background-color: #ff589f;
 }
 
-#signup .col-4:nth-child(2) .glowyBox {
+#signup .row div:nth-child(2) .glowyBox {
   background-color: #ffd700;
 }
 
-#signup .col-4:nth-child(3) .glowyBox {
+#signup .row div:nth-child(3) .glowyBox {
   background-color: #15b2d3;
 }
 
@@ -365,6 +422,8 @@ body {
   height: 100%;
   -webkit-box-shadow: 3px 3px 3px black;
           box-shadow: 3px 3px 3px black;
+  max-width: 300px;
+  margin: auto;
 }
 
 #signup .glowyBox p {
