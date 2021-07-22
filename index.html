@@ -19,7 +19,17 @@
 
 <body>
   <!--navbar-->
-  <div id="navbar"></div>
+  <div id="navbar">
+    <img src="/assets/images/fillerimage.jpg" alt="Logo">
+    
+    <ul>
+      
+      <li><a href="#about"><button>About</button></a></li>
+      <li><a href="#timeline"><button>Timeline</button></a></li>
+      <li><a href="#credentials"><button>Credentials</button></a></li>
+      <li><a href="#signup"><button>Sign Up</button></a></li>
+    </ul>
+  </div>
 
   <!--Hero Section-->
   <!--Slideshow Status: Unknown-->
@@ -56,40 +66,43 @@
       </div>
     </div>
   </div>
-
   <!--About Section-->
   <div id="about" class="pb-3 pt-3">
-    <h1>About</h1>
     <div class="container">
-      <img src="assets/images/about-image.jpg" />
+      <h1>About</h1>
+      <div class="gridlayout">
 
-      <div class="grid">
-        <div class="about-row">
-          <div id="t-l">
-            <h2>What's a Learnathon?</h2>
-            <p>A Learnathon is a fun event where participants learn and create a coding project all in one weekend!</p>
+        <img src="assets/images/about-image.jpg" />
+
+        <div class="grid">
+          <div class="about-row">
+            <div id="t-l">
+              <h2>What's a Learnathon?</h2>
+              <p>A Learnathon is a fun event where participants learn and create a coding project all in one weekend!
+              </p>
+            </div>
+            <div id="t-r">
+              <h2>What will you get?</h2>
+              <p>You’ll learn how to build a digital calendar!</p>
+            </div>
           </div>
-          <div id="t-r">
-            <h2>What will you get?</h2>
-            <p>You’ll learn how to build a digital calendar!</p>
-          </div>
-        </div>
-        <div class="about-row">
-          <div id="b-l">
-            <h2>Similarities to a Hackathon</h2>
-            <ul>
-              <li>Create a coding project</li>
-              <li>Share the coding project</li>
-              <li>Prizes</li>
-            </ul>
-          </div>
-          <div id="b-r">
-            <h2>Differences from a Hackathon</h2>
-            <ul>
-              <li>Less competitive</li>
-              <li>Content is more focused</li>
-              <li>Less stressful</li>
-            </ul>
+          <div class="about-row">
+            <div id="b-l">
+              <h2>Similarities to a Hackathon</h2>
+              <ul>
+                <li>Create a coding project</li>
+                <li>Share the coding project</li>
+                <li>Prizes</li>
+              </ul>
+            </div>
+            <div id="b-r">
+              <h2>Differences from a Hackathon</h2>
+              <ul>
+                <li>Less competitive</li>
+                <li>Content is more focused</li>
+                <li>Less stressful</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -203,20 +216,23 @@
     <div class="container">
       <h1>Sign Up!</h1>
       <p>Follow these steps.</p>
-      <div class="row gx-5">
-        <div class="col-4">
+      <div class="row gx-3 gx-md-5 gy-3 gy-0 px-4 px-sm-0">
+        <div class="col-sm-4">
           <div class="p-3 glowyBox">
-            <h3>1. Google Forms</h3>
+            <h3>1. Google Form</h3>
+            <p>Fill out this form to officially register!</p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4">
           <div class="p-3 glowyBox">
             <h3>2. Discord</h3>
+            <p>Join our Discord for easy communication between students and instructors.</p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4">
           <div class="p-3 glowyBox">
             <h3>3. Notion</h3>
+            <p>Keep this link for more detailed information about the workshops and schedules.</p>
           </div>
         </div>
       </div>
@@ -234,6 +250,7 @@
   <script src="assets/scripts/sundayTimeline.js"></script>
   <script src="assets/scripts/slideshow.js"></script>
   <script src="assets/scripts/objectFitPolyfill.basic.min.js"></script>
+  <script src="assets/scripts/frostednav.js"></script>
 </body>
 
 </html>

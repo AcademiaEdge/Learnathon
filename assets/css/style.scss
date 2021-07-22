@@ -5,6 +5,7 @@ $yellow: #ffd700;
 $orange: #f3872f;
 $font: 'M PLUS Rounded 1c', sans-serif;
 $white: white;
+$breakpoint-phone: 576px;
 $breakpoint-tablet: 768px;
 
 html {
@@ -12,7 +13,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  margin:0;
+  margin:0!important;
   font-family:$font;
 }
 #navbar {
@@ -22,6 +23,47 @@ body {
   position:fixed;
   top:0;
   z-index:10;
+  padding:0;
+  display:flex;
+  align-items: center;
+  transition: all 0.6s ease-out;
+  img {
+    height:50px;
+  }
+  
+  ul {
+    padding:0;
+    margin:0 0 0 auto;
+    width:100%;
+    height:100%;
+    li {
+      float:left;
+      width:calc(100% / 4);
+      list-style: none;
+      height:inherit;
+      button {
+        width:100%;
+        height:100%;
+        background-color:inherit;
+        color:white;
+        border-style:none;
+        border-width:0;
+        transition:background-color 0.2s;
+        text-align:center;
+        overflow:hidden;
+      }
+      button:hover {
+        background-color:$light-blue;
+      }
+    }
+
+  }
+  
+}
+.frosted {
+  opacity: .8!important;
+  backdrop-filter: blur(5px);
+  transition: all 0.6s ease-out;
 }
 #hero {
   /*background-image: url("/assets/images/fillerimage.jpg");
@@ -49,10 +91,15 @@ body {
     }
     h1 {
       font-size: 40px;
+      font-weight: bold;
+      word-spacing: 5px;
+      line-height: 1;
     }
+ 
     h2 {
       font-size: 20px;
-      word-spacing: 10px;
+      font-weight: bold;
+      line-height: 1.4;
     }
   }
   .slide:nth-of-type(1) .focus{
@@ -75,17 +122,15 @@ body {
   h1 {
     color:$pink;
   }
-  .container {
+  .gridlayout {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin:0 auto;
-
     img {
-      width: 25vw;
-      height: 25vw;
+      width: 30%;
+      height: 30%;
     }
 
     @media (max-width: $breakpoint-tablet) {
@@ -108,9 +153,9 @@ body {
       justify-content: center;
       div {
         background: $yellow;
-        width: 35vw;
-        min-height: 12vw;
-        margin: 1vw; padding: 1vw;
+        width: 45%;
+        min-height: 12%;
+        margin: 1%; padding: 1%;
         box-shadow: 5px 5px 10px 0 #666666;
 
         display: flex;
@@ -119,7 +164,11 @@ body {
       }
 
       p { width: 100%; text-align: left; font-size: 1em;}
-      h2 { font-size: 1.5em; font-weight: 900; }     
+      h2 { 
+        font-size: 1.5em;
+        font-weight: 900;
+        text-align:center; 
+      }     
     }
 
     @media (max-width: $breakpoint-tablet) {
@@ -229,6 +278,7 @@ body {
   .profileBox img {
     width:80%;
     margin-left:10%;
+    max-width:200px;
   }
 }
 #signup {
@@ -236,13 +286,13 @@ body {
   h1 {
     color:$white;
   }
-  .col-4:nth-child(1) .glowyBox {
+  .row div:nth-child(1) .glowyBox {
     background-color:$pink;
   }
-  .col-4:nth-child(2) .glowyBox {
+  .row div:nth-child(2) .glowyBox {
     background-color:$yellow;
   }
-  .col-4:nth-child(3) .glowyBox {
+  .row div:nth-child(3) .glowyBox {
     background-color:$light-blue;
   }
   .glowyBox {
@@ -253,6 +303,8 @@ body {
     }
     height:100%;
     box-shadow:3px 3px 3px black;
+    max-width:300px;
+    margin:auto;
   }
   .glowyBox:hover {
     transform: scale(1.1);
