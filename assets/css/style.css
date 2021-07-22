@@ -218,28 +218,104 @@ body {
   color: white;
 }
 
-#timeline table {
+#timeline #tableContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1.5em;
+}
+
+#timeline #tableContainer #tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#timeline #tableContainer .tab {
+  border-radius: 25px 25px 0px 0px;
+  -webkit-box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.5);
+  background-color: #ff589f;
+  min-width: 10vw;
+  margin-left: 3vw;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#timeline #tableContainer .tab:hover {
   background-color: #15b2d3;
-  border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 3px black;
-          box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #timeline #tableContainer #tabs {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #timeline #tableContainer .tab {
+    width: 30vw;
+    margin: 0;
+  }
+}
+
+#timeline #tableContainer .activeTab {
+  background-color: #ffd700;
+}
+
+#timeline #tableContainer table {
+  background-color: #15b2d3;
+  border-radius: 15px 0px 15px 15px;
+  -webkit-box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
 
-#timeline table th {
+@media (max-width: 768px) {
+  #timeline #tableContainer table {
+    border-radius: 0px 0px 15px 15px;
+  }
+}
+
+#timeline #tableContainer table th {
   text-align: center;
   font-weight: 700;
+  border-bottom: 2px black solid;
 }
 
-#timeline table th:nth-child(1), #timeline table td:nth-child(1) {
-  width: 80%;
-  padding-left: 20px;
+#timeline #tableContainer table th:nth-of-type(1) {
+  width: 66.6vw;
 }
 
-#timeline table th:nth-child(2), #timeline table td:nth-child(2) {
-  width: 20%;
+#timeline #tableContainer table th:nth-of-type(2) {
+  width: 33.3vw;
+}
+
+#timeline #tableContainer table td {
   text-align: center;
-  padding-right: 20px;
+}
+
+#timeline .hiddenTable {
+  display: none;
+}
+
+#timeline .shownTable {
+  display: block;
 }
 
 #credentials {
