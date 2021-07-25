@@ -24,7 +24,7 @@ xmlhttp.onreadystatechange = function() {
 
 xmlhttp.open(
   "GET",
-  "https://spreadsheets.google.com/feeds/list/1F8fujORpy8IH938CdO06Zqd5QtmdRmEPjc6M8FNpxFw/1/public/full?alt=json",
+  "https://spreadsheets.google.com/feeds/list/1F8fujORpy8IH938CdO06Zqd5QtmdRmEPjc6M8FNpxFw/2/public/full?alt=json",
   true
 );
 xmlhttp.send();
