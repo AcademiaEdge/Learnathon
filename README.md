@@ -13,7 +13,7 @@ Using Google Forms
 
 [Notion](https://www.notion.so/0b02eadfb4534c92986496a6c6040ea6?v=4667db40d05b48838a71732724478a0c)
 
-[Netifly](https://elastic-yonath-04d6b8.netlify.app)
+[Netifly](https://aelearnathon.netlify.app/)
 
 [Learnathon Timeline Google Sheet](https://docs.google.com/spreadsheets/d/1F8fujORpy8IH938CdO06Zqd5QtmdRmEPjc6M8FNpxFw/edit#gid=0)
 
