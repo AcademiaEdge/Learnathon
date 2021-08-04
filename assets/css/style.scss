@@ -312,5 +312,114 @@ body {
 }
 #footer {
   background-color:$navy;
-  height:50px;
+  height: fit-content;
+  padding-top: 3em;
+
+  #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 3em;
+
+    a { text-decoration-line: none; }
+
+    .box{
+      background-color: $yellow;
+      min-height:fit-content;
+      min-width: 300px;
+      width: fit-content;
+      margin: 1em;
+      padding: 2em 0.5em;
+      border-radius: 10px;
+      div, p, h3 {text-align: center;}
+
+      #socials {
+        margin-top: 1em;
+        a {
+          font-size: 1.5em;
+          border-radius: 999px;
+          margin: 0 0.25em;
+          padding: 0.1em;
+          transition: 0.3s;
+
+          color: black;
+        }
+        a:hover {
+          background-color: $light-blue;
+        }
+        i {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      ul{ 
+        list-style: none; 
+        padding:0.5em; margin:0;
+        li {
+          font-size: 1.25rem;
+          padding-left: 1rem;
+          text-indent: -0.7rem;
+        }
+      
+        li::before {
+          content: "› ";
+        }
+      }
+    }
+
+    #agreement {
+      width: fit-content;
+      padding: 0.5em;
+      margin: 0 auto;
+      transition: 0.5s;
+      border-radius: 10px;
+      a {color: black;}
+    }
+    #agreement:hover{
+      background-color: $light-blue;
+    }
+
+    .box:nth-of-type(3){
+      form {
+        display:flex;
+        flex-direction: column;
+      }
+
+      input {
+        margin: 0.2em 0;
+        border-radius: 5px;
+      }
+
+      input[name="name"], input[name="email"] {
+        padding:0.5em;
+      }
+
+      input[type="submit"]{
+        padding: 1em;
+        background-color:$light-blue;
+        font-weight: 900;
+        font-size: 1em;
+        transition: 0.5s;
+      }
+
+      input[type="submit"]:hover{
+        font-size: 1.5em;
+        padding: 0.4em;
+      }
+
+    }
+  }
+
+  #copy {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: white;
+
+    a { color: white; text-decoration-line: none; transition: 0.5s; }
+    a:hover { color: $yellow }
+  }
 }
