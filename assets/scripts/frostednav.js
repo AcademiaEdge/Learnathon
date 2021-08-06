@@ -2,10 +2,10 @@ function checkScroll(){
   var startY = $('#navbar').height(); //The point where the navbar changes in px
 
   if($(window).scrollTop() > startY){
-      $('#navbar').addClass("frosted");
+      $('#navbar ul').addClass("frosted");
       console.log("sup");
   }else{
-      $('#navbar').removeClass("frosted");
+      $('#navbar ul').removeClass("frosted");
   }
 }
 
